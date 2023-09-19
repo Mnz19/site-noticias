@@ -1,6 +1,7 @@
 let currentPage = 1;
 const itemsPerPage = 1;
 async function cards(pagina) {
+  try{
     const response = await fetch(`http://servicodados.ibge.gov.br/api/v3/noticias/?tipo=noticia&qtd=${itemsPerPage + 3}&page=${pagina}`);
     if (!response.ok) {
       throw new Error('Erro na solicitação da API');
@@ -26,6 +27,8 @@ async function cards(pagina) {
 
       cards.appendChild(p);
       cards.appendChild(a);
+    }}catch (error) {
+      console.error('Ocorreu um erro:', error);
     }}
 
 async function carregarPagina(pagina) {
@@ -87,5 +90,3 @@ document.getElementById("prev-button").addEventListener("click", () => {
 
 carregarPagina(currentPage);
 cards(currentPage);
-
-
