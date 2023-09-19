@@ -1,0 +1,91 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: none;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+body{
+    background-color: #fffffd;
+}
+nav{
+    display: absolute;
+}
+
+nav ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    background-color: #0a6789;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    font-size: 4vh;
+    text-shadow: 2px 2px #000000;
+}
+
+section{
+    display: flex;
+    flex-direction: row;
+}
+
+.content-left{
+    display: flex;
+    flex-direction: column;
+    padding: 60px;
+}
+
+h1{
+    font-size: 6vh;
+    padding-bottom: 40px;
+    line-height: 6.5vh;
+    font-weight: bold;
+}
+
+.content-left img{
+    border-radius: 2%;
+    box-shadow: 1px 3px 7px black;
+    margin-bottom: 1vh;
+    max-width: 100vh;
+}
+
+.content-left span{
+    font-size: 1.5vh;
+    padding-left: 1.2vh;
+    margin-bottom: 2vh;
+}
+.content-left strong{
+    padding-left: 1.2vh;
+}
+.content-left p{
+    padding-left: 1.2vh;
+    background-color: #dbdada;
+    padding: 23px;
+    border-radius: 5px;
+    font-size: 2.2vh;
+    max-width: 100vh;
+}
+
+.content-right{
+    margin-top: 15vh;
+}
+.content-right h2{
+    font-size: 4vh;
+}
+
+.miniContent{
+    border: #000000;
+    margin-top: 3vh;
+    margin-right: 20vh;
+    border-bottom: 3px solid black;
+    width: 24vh;
+}
+.miniContent p{
+    font-size: 2.2vh;
+    padding-bottom: 1vh;
+
+}
+
