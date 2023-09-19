@@ -1,36 +1,3 @@
-
-// fetch('http://servicodados.ibge.gov.br/api/v3/noticias/?tipo=noticia/?qtd=3')
-//   .then(res => {
-//     return res.json();
-//   })
-//   .then(data => {
-//     const dados = data;
-//     const containerLeft = document.getElementById('noticia')
-//     for (const item of dados.items){
-//       const h1 = document.createElement("h1")
-//       const img = document.createElement("img")
-//       const span = document.createElement("span")
-//       const link = document.createElement("a")
-//       const p = document.createElement("p")
-//       h1.textContent = item.titulo
-//       img.src = item.imagens.url
-//       span.textContent = item.data_publicacao
-//       p.textContent = item.introducao
-//       link.href = item.link
-//       link.textContent = "Ler Mais"
-//       link.target = "_blank"
-
-//       containerLeft.appendChild(h1)
-//       containerLeft.appendChild(img)
-//       containerLeft.appendChild(span)
-//       containerLeft.appendChild(p)
-//       containerLeft.appendChild(link)
-      
-//     }
-//   })
-//   .catch(error => {
-//     console.error('Ocorreu um erro:', error);
-//   });
 let currentPage = 1;
 const itemsPerPage = 1;
 async function cards(pagina) {
@@ -43,7 +10,7 @@ async function cards(pagina) {
 
     const cards = document.getElementById('cards');
     cards.innerHTML = '';
-    
+
     const h2 = document.createElement("h2")
     cards.appendChild(h2);
     h2.textContent = "Outras Notícias"
@@ -81,11 +48,11 @@ async function carregarPagina(pagina) {
       const link = document.createElement("a")
 
       h1.textContent = noticia.titulo
-      img.src = noticia.imagens[0].url
+      img.src = noticia.imagens.url
       span.textContent = noticia.data_publicacao
       p.textContent = noticia.introducao
       link.href = noticia.link
-      link.textContent = "Ler Mais"
+      link.textContent = "Ler Mais ..."
       link.target = "_blank"
 
       containerLeft.appendChild(h1);
