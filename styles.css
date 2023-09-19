@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
 *{
     padding: 0;
     margin: 0;
@@ -7,20 +9,23 @@
 body{
     background-color: #fffffd;
 }
-nav{
-    display: absolute;
+.topBar{
+    width: 100%;
+    display: flex;
+    background-color: #0a6789;
+    justify-content: center;
 }
 
-nav ul{
+
+.topBar ul{
     display: flex;
     justify-content: center;
     list-style: none;
     padding-top: 1%;
     padding-bottom: 1%;
-    background-color: #0a6789;
 }
 
-nav a{
+.topBar a{
     color: white;
     text-decoration: none;
     font-size: 4vh;
@@ -56,6 +61,7 @@ h1{
     font-size: 1.5vh;
     padding-left: 1.2vh;
     margin-bottom: 2vh;
+    display: block;
 }
 .containerLeft a{
     padding-left: 1.2vh;
@@ -76,16 +82,38 @@ h1{
     font-size: 4vh;
 }
 
-.minicontainer{
+.containerRight p{
     border: #000000;
     margin-top: 3vh;
     margin-right: 20vh;
     border-bottom: 3px solid black;
     width: 24vh;
-}
-.minicontainer p{
     font-size: 2.2vh;
     padding-bottom: 1vh;
+}
 
+.containerRight a{
+
+}
+
+.containerPag{
+    width: calc(100% - 2rem);
+    display: flex;
+    position: absolute;
+    bottom: 1px;
+    padding: 1rem 0;
+    justify-content: center;
+}
+.pagination-number,
+.pagination-button{
+  font-size: 1.1rem;
+  background-color: transparent;
+  border: none;
+  margin: 0.25rem 0.25rem;
+  cursor: pointer;
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: .2rem; 
+  margin: 0 2vh 0 2vh;
 }
 
