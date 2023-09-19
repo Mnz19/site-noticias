@@ -2,7 +2,7 @@ let currentPage = 1;
 const itemsPerPage = 1;
 async function cards(pagina) {
   try{
-    const response = await fetch(`http://servicodados.ibge.gov.br/api/v3/noticias/?tipo=noticia&qtd=${itemsPerPage + 3}&page=${pagina}`);
+    const response = await fetch(`https://servicodados.ibge.gov.br/api/v3/noticias/?tipo=noticia&qtd=${itemsPerPage + 3}&page=${pagina}`);
     if (!response.ok) {
       throw new Error('Erro na solicitação da API');
     }
@@ -33,7 +33,7 @@ async function cards(pagina) {
 
 async function carregarPagina(pagina) {
   try {
-    const response = await fetch(`http://servicodados.ibge.gov.br/api/v3/noticias/?tipo=noticia&qtd=${itemsPerPage}&page=${pagina}`);
+    const response = await fetch(`https://servicodados.ibge.gov.br/api/v3/noticias/?tipo=noticia&qtd=${itemsPerPage}&page=${pagina}`);
     if (!response.ok) {
       throw new Error('Erro na solicitação da API');
     }
