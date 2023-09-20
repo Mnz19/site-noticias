@@ -145,6 +145,10 @@ a:hover{
         display: flex;
         flex-direction: column;
     }
+    
+    a{
+        font-size: 1.9vh;
+    }
     .containerLeft{
         padding: 0;
         margin-bottom: 0;
