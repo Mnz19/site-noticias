@@ -30,6 +30,7 @@ body{
     text-decoration: none;
     font-size: 4vh;
     text-shadow: 2px 2px #000000;
+    border: none;
 }
 
 section{
@@ -51,7 +52,6 @@ h1{
 }
 
 .containerLeft img{
-    border-radius: 2%;
     box-shadow: 1px 3px 7px black;
     margin-bottom: 1vh;
     max-width: 100vh;
@@ -65,14 +65,17 @@ h1{
 }
 .containerLeft a{
     padding-left: 1.2vh;
+    margin-top: 1.2vh;
+    width: 8vh;
 }
+
 .containerLeft p{
     padding-left: 1.2vh;
     background-color: #dbdada;
     padding: 23px;
-    border-radius: 5px;
-    font-size: 2.2vh;
+    font-size: 2.4vh;
     max-width: 100vh;
+    margin-left: -1vh;
 }
 
 .containerRight{
@@ -90,12 +93,23 @@ h1{
     width: 24vh;
     font-size: 2.2vh;
     padding-bottom: 1vh;
+    margin-bottom: 1vh;
 }
 
 a{
     text-decoration: none;
     color: black;
     margin-top: 1vh;
+    cursor: pointer;
+    transition: 0.5s;
+    border: 1px solid black;
+    padding: 0.5vh;
+}
+a:hover{
+    transform: scale(1.1);
+    background-color: #0a6789;
+    color: white;
+    border-color: white;
 }
 
 .containerPag{
@@ -117,6 +131,13 @@ a{
   width: 2.5rem;
   border-radius: .2rem; 
   margin: 0 2vh 0 2vh;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.pagination-number,
+.pagination-button:hover{
+    transform: scale(1.1) ;
 }
 
 @media (max-width: 1030px) {
