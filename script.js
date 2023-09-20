@@ -80,7 +80,6 @@ document.getElementById("next-button").addEventListener("click", () => {
   carregarPagina(currentPage)
   cards(currentPage)
 })
-
 document.getElementById("prev-button").addEventListener("click", () => {
   if (currentPage > 1) {
     currentPage--
